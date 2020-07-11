@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
 	public void convertCurrency(View view){
 		EditText currencyText = (EditText) findViewById(R.id.currencyEditText);
-		Toast.makeText(this, "Pounds converted to US: $" + Double.parseDouble(currencyText.getText().toString()) * 1.3, Toast.LENGTH_LONG).show();
+		Toast.makeText(this, String.format("Pounds converted to US: $%.2f", Double.parseDouble(currencyText.getText().toString()) * 1.3), Toast.LENGTH_LONG).show();
 	}
 
 	@Override
