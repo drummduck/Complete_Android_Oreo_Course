@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EggTimer</string>
+    <string name="timer_default_val">0:00</string>
+</resources>
